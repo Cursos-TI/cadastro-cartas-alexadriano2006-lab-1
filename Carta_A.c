@@ -136,18 +136,21 @@ int main() {
   printf("Super poder: %.7f\n", super_poder2);
 
 
-  // tabela comparação das cartas
+// tabela comparação (utilizando operadores relacionais e operadores logicos)
 
-  printf("\nComparação das cartas \n");
-  printf("População: %d\n", (populacao > populacao2));
-  printf("Aréa %d\n", (area > area2));
-  printf("PIB: %d\n", (pib > pib2));
-  printf("Pontos turisticos: %d\n", (turismo > turismo2));
-  printf("Densidade populacional: %d\n", (densidade_populacional <= densidade_populacional2));
-  printf("PIB per Capita: %d\n", (pib_percapita > pib_percapita2));
+ if (populacao > populacao2) {
+  printf("Carta 1 vence");
+ } 
+      else if (populacao < populacao2) {
+      printf("Carta 2 venceu");
+      }
+      
+          else {
+           printf("OS valores são iguais!");
+           }
+
   
   
-
   
    return 0;
  
